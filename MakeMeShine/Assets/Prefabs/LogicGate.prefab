@@ -92,6 +92,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   text: {fileID: 1835361708037725471}
+  andSprite: {fileID: 21300000, guid: 731ba6240a5b1e9448c8d61d59e72c2f, type: 3}
+  orSprite: {fileID: 21300000, guid: 146d6e992cd2a634eb0f958733a81fe0, type: 3}
+  notSprite: {fileID: 21300000, guid: 76dfc51456d991e428aa095c7122594f, type: 3}
   type: 0
 --- !u!1 &6292271317137822834
 GameObject:
@@ -127,8 +130,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 94.98, y: 30}
+  m_AnchoredPosition: {x: -0.0000048876, y: 35}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &174117219782934539
 CanvasRenderer:

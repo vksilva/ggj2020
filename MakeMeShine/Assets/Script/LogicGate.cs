@@ -7,6 +7,11 @@ public class LogicGate : LogicValue
 {
     public List<LogicValue> inputs;
     public Text text;
+    public Sprite andSprite;
+    public Sprite orSprite;
+    public Sprite notSprite;
+
+
     public GateType type;
     public enum GateType {
         And,
@@ -22,6 +27,24 @@ public class LogicGate : LogicValue
         }
 
         UpdateValue();
+
+        //Mudar a imagem dependendo do tipo de porta
+
+        var renderer = GetComponent<Image>();
+        switch (type)
+        {
+            case GateType.And:
+                renderer.sprite = andSprite;
+                break;
+
+            case GateType.Not:
+                renderer.sprite = notSprite;
+                break;
+
+            case GateType.Or:
+                renderer.sprite = orSprite;
+                break;
+        }
     }
 
     public void UpdateValue()
