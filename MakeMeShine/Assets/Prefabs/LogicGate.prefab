@@ -88,13 +88,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: 0
+  text: {fileID: 1835361708037725471}
   inputs:
   - {fileID: 0}
   - {fileID: 0}
-  text: {fileID: 1835361708037725471}
-  andSprite: {fileID: 21300000, guid: 731ba6240a5b1e9448c8d61d59e72c2f, type: 3}
-  orSprite: {fileID: 21300000, guid: 146d6e992cd2a634eb0f958733a81fe0, type: 3}
-  notSprite: {fileID: 21300000, guid: 76dfc51456d991e428aa095c7122594f, type: 3}
+  andSprite: {fileID: 21300000, guid: b64ef509d0b58ed4888d3ac5300dcd40, type: 3}
+  orSprite: {fileID: 21300000, guid: f7001371b3240c349877f4b5f42d9922, type: 3}
+  notSprite: {fileID: 21300000, guid: 204a77725a8d48e4ab26f21892c60fbd, type: 3}
   type: 0
 --- !u!1 &6292271317137822834
 GameObject:

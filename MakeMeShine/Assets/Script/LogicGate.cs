@@ -6,11 +6,10 @@ using UnityEngine.UI;
 public class LogicGate : LogicValue
 {
     public List<LogicValue> inputs;
-    public Text text;
     public Sprite andSprite;
     public Sprite orSprite;
     public Sprite notSprite;
-
+    public Text text;
 
     public GateType type;
     public enum GateType {
@@ -29,7 +28,6 @@ public class LogicGate : LogicValue
         UpdateValue();
 
         //Mudar a imagem dependendo do tipo de porta
-
         var renderer = GetComponent<Image>();
         switch (type)
         {
@@ -64,7 +62,7 @@ public class LogicGate : LogicValue
                 break;
         }
 
-        text.text = output.ToString();
+        SetButtonValue();
     }
 
     private void UpdateAnd()
@@ -99,6 +97,18 @@ public class LogicGate : LogicValue
         foreach (var input in inputs)
         {
             SetValue(!input.output);
+        }
+    }
+
+    private void SetButtonValue()
+    {
+        if (output)
+        {
+            text.text = "1";
+        }
+        else
+        {
+            text.text = "0";
         }
     }
 }
